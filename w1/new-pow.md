@@ -22,5 +22,5 @@
   - **자동 복구(Self-Healing)**: 컨테이너가 오류로 다운되거나 문제가 발생하면, 헬스 체크 후 자동으로 새로운 인스탠스를 실행시킬 수 있습니다.
   - **제로 다운 타임 배포(Zero Downtime Deployments)**: V1 → V2로 갈 때, 다운 타임 없이 새로운 버전을 릴리즈할 수 있습니다.
 
-
-
+- [참고링크](https://kubernetes.io/docs/concepts/containers/)
+- [참고링크](https://soniacomp.medium.com/%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-container-%ED%8C%8C%EB%93%9C-pod-%EB%85%B8%EB%93%9C-node-%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0-cb82e90da6d6)
