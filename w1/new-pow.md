@@ -1,6 +1,7 @@
 ## Container[](http://course.whatapk8s.net/docs/kubernetes-basic/what-is-kubernetes#container)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1feb7462-9c33-4bf1-b0bb-7973d34ffaf2/eb923fc2-b851-4ca8-8541-7cc6f8641459/Untitled.png)
+![image](https://github.com/bong6981/kube-study/assets/103120173/86129034-3561-43ca-a390-a439f15ebe3a)
+
 
 - 애플리케이션과 그것을 실행하는데 필요한 모든 의존성(코드, 런타임, 시스템 도구, 시스템 라이브러리 등)을 패키징하는 기술입니다.
 - 컨테이너 런타임(Docker, containerd) 위에서 실행되며, 호스트 OS의 커널을 공유합니다.
@@ -8,7 +9,8 @@
 
 ### 컨테이너 오케스트레이션
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1feb7462-9c33-4bf1-b0bb-7973d34ffaf2/d7d06ce2-920c-4fb3-9617-d01bbedfd690/Untitled.png)
+![image](https://github.com/bong6981/kube-study/assets/103120173/5121dbbf-00f2-4f9b-a642-5895533a02a9)
+
 
 - 컨테이너화된 애플리케이션은 애플리케이션의 리소스 요구사항에 기반하여 스케일업 혹은 스케일 다운 할 수 있어야 합니다. 이런 비즈니스 요구사항을 충족시키기 위해서 효율적으로 컨테이너들을 관리하고 스케줄링하기 위한 도구의 필요성이 증대합니다.
 - 쿠버네티스는 이러한 컨테이너 오케스트레이션 도구 중의 하나로, 운영환경에서 컨테이너가 다운 타임 없이 실행될 수 있도록 관리하는 역할을 합니다.
@@ -28,8 +30,8 @@
     - 유니크 IP 주소를 갖고있다.
     - pod 안에 container끼리 localhost로 통신이 가능
 - 쿠버네티스와 도커의 차이점은 도커는 컨테이너를 만들지만, 쿠버네티스는 컨테이너 대신 Pod을 만듭니다. Pod은 한 개 또는 여러 개의 컨테이너를 포함합니다.
-![image](https://github.com/bong6981/kube-study/assets/103120173/f6603260-74b2-41d7-8d85-69b9563aa5de)
-[출처](https://subicura.com/k8s/guide/pod.html#%E1%84%88%E1%85%A1%E1%84%85%E1%85%B3%E1%84%80%E1%85%A6-pod-%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AF%E1%84%80%E1%85%B5)
+![image](https://github.com/bong6981/kube-study/assets/103120173/eaaa8f12-04cc-42d2-b9c7-d77ee0745381)
+
 
 ### 서비스
 
@@ -39,7 +41,8 @@
 - 웹 서비스의 여러 인스턴스가 각기 다른 파드에서 동작하더라도 서비스를 사용하면, 이 모든 파드에 대한 단일 DNS 이름과 IP 주소를 갖게 됩니다.
 - 파드들이 종료되거나 새로 생성되더라도, 서비스의 IP 주소와 DNS 이름은 변하지 않습니다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1feb7462-9c33-4bf1-b0bb-7973d34ffaf2/6047e1b2-aade-4ae8-a353-f05cc18032ae/Untitled.png)
+![image](https://github.com/bong6981/kube-study/assets/103120173/a3eb5972-4708-442b-a708-c2c7f95c9b45)
+
 
 - 여러 개의 노드가 있다면 아무 접근해도 지정한 Pod으로 접근할 수 있습니다.
 
