@@ -7,7 +7,6 @@
     - 2/2, 3/3 : 여러 개의 컨테이너가 띄어 있을 때
 
 ![image](https://github.com/bong6981/kube-study/assets/73228803/b630bb06-e931-43d0-ad7e-df4c505963df)
-![image](https://github.com/bong6981/kube-study/assets/73228803/d063dcae-2111-4f91-8dc9-452030681908)
 
 
 
