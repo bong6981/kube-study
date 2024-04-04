@@ -189,7 +189,7 @@ chk-hn         LoadBalancer   10.96.253.167   192.168.1.11   80:30941/TCP   12m
 - kind
 	- http://192.168.247.5:30623/ 노드ip + service port로 접속가능했음
 ### 원인
-- LoadBalancer 타입 특성 상 external IP로 접근 가능하지만, macOS, Windows에서는 docker network를 host에 노출하지 않으므로 여기서는 NodePort를 통해 외부에 노출 (port : 31593.참고로 이 땜시 개고생함. NodePort로 우회하는 전략을 설명하는 문서가 전무. 오직 hint만 kind 공식 문서에 있을 뿐. [macOS의 경우 docker network를 노출하는 방법](https://www.thehumblelab.com/kind-and-metallb-on-mac/)이 있긴 한데, 이 문서의 prerequisite인 tuntap 설치가 macOS에서는 이제 불가)
+- LoadBalancer 타입 특성 상 external IP로 접근 가능하지만, macOS, Windows에서는 docker network를 host에 노출하지 않으므로 여기서는 NodePort를 통해 외부에 노출 (port : 31593.참고로 이 땜시 개고생함. NodePort로 우회하는 전략을 설명하는 문서가 전무. 오직 hint만 kind 공식 문서에 있을 뿐....[해당 문서에 제일 하단에 있는 문제](https://kind.sigs.k8s.io/docs/user/known-issues/)
 ```
 ☁  kind  curl 192.168.247.5:30623
 chk-hn-6cb6cdf8f8-68xsn
@@ -332,9 +332,8 @@ kubectl describe pods my-pod
 - 서비스, 로드밸런싱, 네트워킹
 - https://kubernetes.io/ko/docs/concepts/services-networking/
 - 쿠버네티스 네트워킹을 어떻게 할까?
-
-- 파드 내의 컨테이너는 루프백 loopback 
-- 서로 다른 파드 간의 통신을 제공한다.
-- 파드에서 실행중인 애플리케이션을 클러스터 외부에서 접근하려면 NodePort, LoadBalancer를 거쳐야 한다.
-- 서비스를 클러스터 내부에서만 쓰도록 설정할 수도 있다. [서비스 내부 트래픽 정책](https://kubernetes.io/ko/docs/concepts/services-networking/service-traffic-policy/)
+	- 파드 내의 컨테이너는 루프백 loopback 
+	- 서로 다른 파드 간의 통신을 제공한다.
+	- 파드에서 실행중인 애플리케이션을 클러스터 외부에서 접근하려면 NodePort, LoadBalancer를 거쳐야 한다.
+	- 서비스를 클러스터 내부에서만 쓰도록 설정할 수도 있다. [서비스 내부 트래픽 정책](https://kubernetes.io/ko/docs/concepts/services-networking/service-traffic-policy/)
 
