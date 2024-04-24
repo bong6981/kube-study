@@ -36,3 +36,10 @@ ip-10-0-4-240.ec2.internal    Ready    <none>   6m6s   v1.29.0-eks-5e0fdde
 `-i`: 표준 입력(Standard Input)을 유지하고 컨테이너의 터미널에 연결합니다. 이를 통해 사용자는 컨테이너 내부로 입력을 보낼 수 있습니다.
 `-t`: 유사 터미널(TTY)을 할당합니다. 이를 통해 사용자는 터미널과 같은 환경을 사용하여 컨테이너 내부에서 작업할 수 있습니다.
 즉, `-it` 옵션은 사용자가 컨테이너에 접속하여 터미널을 통해 상호작용할 수 있도록 해줍니다.
+```
+    -i, --stdin=false:
+        Pass stdin to the container
+
+    -t, --tty=false:
+        Stdin is a TTY
+```
