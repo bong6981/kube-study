@@ -2,10 +2,11 @@
 - AWS GUI 기준
 
 ## VPC 만들기
-- AZ
-- subnet
-- nat gateway
-- vpc endpoint
+- VPC 등을 선택
+- AZ 2개
+- subnet 4개 ( 퍼블릭 2, 프라이빗 2)
+- nat gateway (1개의 az) 
+- vpc endpoint (없음)
 - dns
 
 ## IAM 만들기
