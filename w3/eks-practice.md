@@ -16,7 +16,8 @@
 
 ## EKS cluster 만들기
 
-## 계정 Access key, secret key 생성 후 `aws configure` 업데이트
+## AWS CLI 
+- 계정 Access key, secret key 생성 후 `aws configure` 업데이트
 `~/.aws/config` 파일과 `~/.aws/credential` 파일 수정
 
 ```
@@ -31,6 +32,9 @@ secret_key     ****************noNt shared-credentials-file
 ☁  .aws  aws eks update-kubeconfig --region us-east-1 --name eks --profile saehim
 Added new context arn:aws:eks:us-east-1:450172767368:cluster/eks to /Users/berapt/.kube/config
 ```
+- 디폴트 프로필 수정 `export AWS_DEFAULT_PROFILE=study`
+- kube 환경 업데이트 `aws eks update-kubeconfig --region us-east-1 --name eks --profile saehim`
+- 연결 확인 `kube get svc`
 
 ### default 프로필 바꾸기
 `export AWS_DEFAULT_PROFILE={profile}`
