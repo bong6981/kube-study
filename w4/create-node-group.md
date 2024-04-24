@@ -30,6 +30,7 @@ ip-10-0-4-240.ec2.internal    Ready    <none>   6m6s   v1.29.0-eks-5e0fdde
 - pod 생성해보기 실습
 - pod yaml로 생성해보기 실습
 - pod yaml에 컨테이너 추가해보기 실습
+- replicaSet 으로 pod 생성
 
 ### `kubectl exec -it {pod}` 에서 -it의 뜻!
 - -it는 kubectl exec 명령어의 옵션입니다. 이 옵션은 Kubernetes 클러스터 내부의 파드에 대한 상호작용(interactive) 터미널(terminal) 세션을 생성합니다.
