@@ -33,6 +33,7 @@ secret_key     ****************noNt shared-credentials-file
 Added new context arn:aws:eks:us-east-1:450172767368:cluster/eks to /Users/berapt/.kube/config
 ```
 - 디폴트 프로필 수정 `export AWS_DEFAULT_PROFILE=study`
+- 프로필 확인 `aws configure list`
 - kube 환경 업데이트 `aws eks update-kubeconfig --region us-east-1 --name eks --profile saehim`
 - 연결 확인 `kube get svc`
 
