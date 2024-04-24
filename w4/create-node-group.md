@@ -24,3 +24,10 @@ ip-10-0-10-168.ec2.internal   Ready    <none>   6m8s   v1.29.0-eks-5e0fdde
 ip-10-0-16-15.ec2.internal    Ready    <none>   6m6s   v1.29.0-eks-5e0fdde
 ip-10-0-4-240.ec2.internal    Ready    <none>   6m6s   v1.29.0-eks-5e0fdde
 ```
+
+---
+## eks에서 실습해보기
+- pod 생성해보기 실습
+- pod yaml로 생성해보기 실습
+- pod yaml에 컨테이너 추가해보기 실습
+- 
