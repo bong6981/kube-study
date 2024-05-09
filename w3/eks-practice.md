@@ -10,11 +10,14 @@
 - dns
 
 ## IAM 만들기
-- EKS -cluster 역할
-- WorkNode 관련 역할 [참고링크](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/create-node-role.html
-)
+- EKS -cluster 역할 생성
+- WorkNode 관련 역할 [참고링크](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/create-node-role.html)
+    - AmazonEC2ContainerRegistryReadOnly
+    - AmazonEKSWorkerNodePolicy 
 
 ## EKS cluster 만들기
+- 역할에 아까 만들어 둔 역할
+- 클러스터 액세스 허용 : 퍼플릭 및 프라이빗 
 
 ## AWS CLI 
 - 계정 Access key, secret key 생성 후 `aws configure` 업데이트
