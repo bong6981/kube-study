@@ -6,6 +6,13 @@ https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/create-managed-node-group
 
 ### 우리는 직접 생성
 https://kschoi728.tistory.com/84
+- amazone linux2
+- spot instance
+- t2 micro
+- 8gib
+- 노드그룹 3노드
+- 나머지는 그대로
+
 
 #### node group 생성시 오류
 - node group 생성 subnet이 public 일 때 에러가 남
